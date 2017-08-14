@@ -13,7 +13,6 @@ function editLinkFormatter(cell, row) {
 
 class ProjectSummary extends Component {
 	render() {
-		console.log("the props are",this.props);
 		return (
 			<div>
 				<div className="row">
@@ -42,7 +41,6 @@ class ProjectSummary extends Component {
 }
 
 function mapStateToProps(state) {
-	console.log(state);
 	return {
 		projects: state
 	}

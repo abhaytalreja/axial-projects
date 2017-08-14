@@ -26,7 +26,6 @@ class AddEditProject extends Component {
 
 	componentDidMount() {
 		if(this.props.match.params.id) {
-			console.log('id is present');
 			let project = this.props.projects[this.props.match.params.id];
 			this.headline.value = project.headline;
 			this.minCheckSize.value = project.minCheckSize;
@@ -35,13 +34,10 @@ class AddEditProject extends Component {
 			this.maxRevenue.value = project.maxRevenue;
 			this.minEbitda.value = project.minEbitda;
 			this.maxEbitda.value = project.maxEbitda;
-		} else {
-			console.log('id is not present');
 		}
 	}
 
 	updateProject() {
-		console.log('Submit Project', this.minRevenue.value.replace('/\,/g',''));
 
 		let project = {
 			headline: this.headline.value,
@@ -56,10 +52,6 @@ class AddEditProject extends Component {
 		let isValid = this.validateCheckSize(project);
 		isValid = isValid ? this.validateRevenue(project) : isValid;
 		isValid = isValid ? this.validateEbitda(project) : isValid;
-
-		console.log(project);
-
-		console.log(isValid);
 
 		if(isValid) {
 			if(this.props.match.params.id) {
@@ -76,7 +68,6 @@ class AddEditProject extends Component {
 		let field = event.target.name.charAt(0).toUpperCase() + event.target.name.slice(1);
 		let reactField = "isValid"+field;
 		let obj = {}
-		console.log(reactField, event.target.value);
 		if(event.target.value && (regex.test(event.target.value) || regexNumbers.test(event.target.value))) {
 			let newValue = event.target.value.replace("k", "000").replace("m", "000000").replace("b", "000000000");
     	event.target.value = newValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -99,12 +90,10 @@ class AddEditProject extends Component {
 	}
 
 	validateRevenue(project) {
-		console.log("Revenue",project.minRevenue, project.maxRevenue);
 		if(project.minRevenue < project.maxRevenue) {
 			this.setState({isValidMinRevenue: "success", isValidMaxRevenue: "success"});
 			return true;
 		} else {
-			console.log("Should be an error");
 			this.setState({isValidMinRevenue: "error", isValidMaxRevenue: "error"});
 			return false;
 		}
@@ -133,7 +122,6 @@ class AddEditProject extends Component {
 							<ControlLabel>Headline</ControlLabel>
 							<FormControl 
 								type="text" 
-								defaultValue="temp"
 								inputRef={(input) => {this.headline = input;}}
 								placeholder="Enter your project headline here.."
 								/>
@@ -143,7 +131,7 @@ class AddEditProject extends Component {
 							<FormControl 
 								type="text" 
 								name="minCheckSize"
-								defaultValue="4"
+								maxLength="18"
 								onChange={event => this.numberWithCommas(event)}
 								inputRef={(input) => {this.minCheckSize = input;}}
 								placeholder="enter min check size.."
@@ -155,7 +143,7 @@ class AddEditProject extends Component {
 							<FormControl 
 								type="text" 
 								name="maxCheckSize"
-								defaultValue="5"
+								maxLength="18"
 								onChange={event => this.numberWithCommas(event)}
 								inputRef={(input) => {this.maxCheckSize = input;}}
 								placeholder="enter max check size.."
@@ -167,7 +155,7 @@ class AddEditProject extends Component {
 							<FormControl 
 								type="text" 
 								name="minRevenue"
-								defaultValue="4"
+								maxLength="18"
 								onChange={event => this.numberWithCommas(event)}
 								inputRef={(input) => {this.minRevenue = input;}}
 								placeholder="enter min Revenue.."
@@ -179,7 +167,7 @@ class AddEditProject extends Component {
 							<FormControl 
 								type="text" 
 								name="minRevenue"
-								defaultValue="5"
+								maxLength="18"
 								onChange={event => this.numberWithCommas(event)}
 								inputRef={(input) => {this.maxRevenue = input;}}
 								placeholder="enter max Revenue.."
@@ -191,7 +179,7 @@ class AddEditProject extends Component {
 							<FormControl 
 								type="text" 
 								name="minEbitda"
-								defaultValue="4"
+								maxLength="18"
 								onChange={event => this.numberWithCommas(event)}
 								inputRef={(input) => {this.minEbitda = input;}}
 								placeholder="enter min EBITDA.."
@@ -203,7 +191,7 @@ class AddEditProject extends Component {
 							<FormControl 
 								type="text" 
 								name="maxEbitda"
-								defaultValue="5"
+								maxLength="18"
 								onChange={event => this.numberWithCommas(event)}
 								inputRef={(input) => {this.maxEbitda = input;}}
 								placeholder="enter max EBITDA.."
