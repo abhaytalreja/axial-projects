@@ -18,7 +18,7 @@ class ProjectSummary extends Component {
 				<div className="row">
 					<h1>Project Summary</h1>
 					<Link to="/addEdit" className="btn btn-primary btn-lg pull-left">Create New Project</Link>
-					<a href="#" onClick={()=>this.props.clearProjects()} className="btn btn-danger btn-lg pull-right">Delete All Projects</a>
+					<button type="button" onClick={()=>this.props.clearProjects()} className="btn btn-danger btn-lg pull-right">Delete All Projects</button>
 					<ProjectInfo />
 				</div>
 				<br />
