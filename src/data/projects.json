@@ -1,0 +1,182 @@
+[
+	{
+		"id": 0,
+		"headline": "Axial",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 1,
+		"headline": "Google",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 2,
+		"headline": "Apple",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 3,
+		"headline": "Facebook",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 4,
+		"headline": "Twitter",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 5,
+		"headline": "Snapchat",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 6,
+		"headline": "Axial2",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 7,
+		"headline": "Google2",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 8,
+		"headline": "Apple2",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 9,
+		"headline": "Facebook2",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 10,
+		"headline": "Twitter2",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 11,
+		"headline": "Snapchat2",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 12,
+		"headline": "Axial3",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 13,
+		"headline": "Google3",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 14,
+		"headline": "Apple3",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 15,
+		"headline": "Facebook3",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 16,
+		"headline": "Twitter3",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	},
+	{
+		"id": 17,
+		"headline": "Snapchat3",
+		"minCheckSize": 1000,
+		"maxCheckSize": 2000,
+		"minRevenue": 5000,
+		"maxRevenue": 10000,
+		"minEbitda": 12000,
+		"maxEbitda": 15000
+	}
+]
